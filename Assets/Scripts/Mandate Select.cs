@@ -6,6 +6,7 @@ public class MandateSelect : MonoBehaviour
 {
     public TextMeshProUGUI[] mandate;
     public TextMeshProUGUI mandateButton;
+    public GameObject feedBack;
     
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,6 @@ public class MandateSelect : MonoBehaviour
 
     public void WrongMandate()
     {
-        
+        feedBack.SetActive(true);
     }
 }
