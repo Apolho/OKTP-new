@@ -2196,8 +2196,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Congratulations! You have just finished creating your first UN Peacekeeping
-    Mission. If you would like to learn more, click below!
+  m_text: Congratulations! You have just finished creating a UN Peacekeeping Mission.
+    If you would like to learn more, click below!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ad071112568413479497e7b03594e72, type: 2}
   m_sharedMaterial: {fileID: -982792828960705864, guid: 7ad071112568413479497e7b03594e72, type: 2}
