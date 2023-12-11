@@ -12,8 +12,8 @@ public class SkipButton : MonoBehaviour
     [SerializeField] private GameObject mandate1;
     [SerializeField] private GameObject mandate2;
     [SerializeField] private GameObject mandate3;
-    [SerializeField] private GameObject mandate4;
-    [SerializeField] private GameObject mandate5;
+    //[SerializeField] private GameObject mandate4;
+    //[SerializeField] private GameObject mandate5;
     [SerializeField] private GameObject earth;
 
     public void SkipToMandates()
@@ -31,8 +31,8 @@ public class SkipButton : MonoBehaviour
                     mandate1.transform.localScale = Vector3.zero;
                     mandate2.transform.localScale = Vector3.zero;
                     mandate3.transform.localScale = Vector3.zero;
-                    mandate4.transform.localScale = Vector3.zero;
-                    mandate5.transform.localScale = Vector3.zero;
+                    //mandate4.transform.localScale = Vector3.zero;
+                    //mandate5.transform.localScale = Vector3.zero;
                     
                     mandate1.SetActive(true);
                     mandate1.transform.DOScale(Vector3.one * 1.2f, 0.5f).SetEase(Ease.OutExpo).OnComplete(() =>
@@ -49,18 +49,18 @@ public class SkipButton : MonoBehaviour
                             {
                                 mandate3.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.InExpo);
                                 
-                                mandate4.SetActive(true);
-                                mandate4.transform.DOScale(Vector3.one * 1.2f, 0.5f).SetEase(Ease.OutExpo).OnComplete(() =>
-                                {
-                                    mandate4.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.InExpo);
-                                    
-                                    mandate5.SetActive(true);
-                                    mandate5.transform.DOScale(Vector3.one * 1.2f, 0.5f).SetEase(Ease.OutExpo).OnComplete(
-                                        () =>
-                                        {
-                                            mandate5.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.InExpo);
-                                        });
-                                });
+                                // mandate4.SetActive(true);
+                                // mandate4.transform.DOScale(Vector3.one * 1.2f, 0.5f).SetEase(Ease.OutExpo).OnComplete(() =>
+                                // {
+                                //     mandate4.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.InExpo);
+                                //     
+                                //     mandate5.SetActive(true);
+                                //     mandate5.transform.DOScale(Vector3.one * 1.2f, 0.5f).SetEase(Ease.OutExpo).OnComplete(
+                                //         () =>
+                                //         {
+                                //             mandate5.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.InExpo);
+                                //         });
+                                // });
                             });
                         });
                     });
