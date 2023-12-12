@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Referendum.unity
     guid: 7d3ae10e808bf714183b402ea11dee2d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Organzied Crime.unity
     guid: a195e4bbb8a5e4144bcb8e6257f6d7a8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Remnants of War.unity
     guid: 48642454d1214b545b2a00c792be5e4a
   - enabled: 1

@@ -1,15 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-   public string sceneName;
 
+   public int counter;
+
+   
    public void ChangeScene()
    {
-      SceneManager.LoadScene(sceneName);
+      if (counter < 2)
+      {
+         counter++;
+      }
+      else if (counter == 2)
+      {
+         SceneManager.LoadScene("Referendum");
+      }
    }
 }

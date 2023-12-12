@@ -13,6 +13,9 @@ public class CheckBox : MonoBehaviour
     private bool allGreen;
     private bool allWhite;
     public GameObject feedBackButton;
+
+    public Sprite selected;
+    public Sprite unselected;
     public void Continue()
     {
         allGreen = true;
@@ -20,13 +23,13 @@ public class CheckBox : MonoBehaviour
         
         for (int i = 0; i < checkBox.Length; i++)
         {
-            if (checkBox[i].GetComponent<Image>().color == Color.white && checkBox[i].CompareTag("isMandate"))
+            if (checkBox[i].GetComponent<Image>().sprite == unselected && checkBox[i].CompareTag("isMandate"))
             {
                 //feedBack.SetActive(true);
                 Debug.Log("Wrong");
                 allGreen = false;
             }
-            if (checkBox[i].GetComponent<Image>().color == Color.green && checkBox[i].CompareTag("isNotMandate"))
+            if (checkBox[i].GetComponent<Image>().sprite == selected && checkBox[i].CompareTag("isNotMandate"))
             {
                 Debug.Log("green");
                 allWhite = false;
@@ -66,13 +69,13 @@ public class CheckBox : MonoBehaviour
     }
     public void ChangeColor()
     {
-        if (gameObject.GetComponent<Image>().color == Color.white)
+        if (gameObject.GetComponent<Image>().sprite == unselected)
         {
-            gameObject.GetComponent<Image>().color = Color.green;
+            gameObject.GetComponent<Image>().sprite = selected;
         }
-        else if (gameObject.GetComponent<Image>().color == Color.green)
+        else if (gameObject.GetComponent<Image>().sprite == selected)
         {
-            gameObject.GetComponent<Image>().color = Color.white;
+            gameObject.GetComponent<Image>().sprite = unselected;
         }
     }
 }
