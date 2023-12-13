@@ -9,6 +9,7 @@ public class LearnMoreButton : MonoBehaviour
     [SerializeField] private GameObject poeple;
     [SerializeField] private GameObject qrcode;
     [SerializeField] private TextMeshProUGUI congrats;
+    [SerializeField] private TextMeshProUGUI title;
     [SerializeField] private List<GameObject> Circles;
     [SerializeField] private List<GameObject> people;
 
@@ -39,6 +40,7 @@ public class LearnMoreButton : MonoBehaviour
         }
 
         congrats.DOFade(0, 3f);
+        title.DOFade(0, 3f);
         
         qrcode.GetComponent<SpriteRenderer>().DOFade(0, 0.1f);
         
@@ -65,8 +67,9 @@ public class LearnMoreButton : MonoBehaviour
         qrcode.GetComponent<SpriteRenderer>().DOFade(1, 3f);
 
         congrats.text = null;
-        
+        congrats.text = null;
+
         //this.gameObject.SetActive(false);
-        
+
     }
 }
