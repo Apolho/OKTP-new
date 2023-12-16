@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -19,24 +20,26 @@ public class SkipButton : MonoBehaviour
     [SerializeField] private Image waveV;
     [SerializeField] private GameObject chapter1;
 
+    public bool VideoCount;
+    public float timer;
+
     public void SkipToMandates()
     {
         skip.transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.OutExpo).OnComplete(() =>
         {
             skip.SetActive(false);
         });
-        video.transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.OutExpo).OnComplete(() =>
+        video.SetActive(false);
+        waveV.transform.DOMoveY(500f, 2f).OnComplete(() =>
         {
-            waveV.transform.DOMoveY(500f, 2f).OnComplete(() =>
+            chapter1.transform.localScale = Vector3.zero;
+            chapter1.SetActive(true);
+            chapter1.transform.DOScale(Vector3.one, 1f).OnComplete(() =>
             {
-                chapter1.transform.localScale = Vector3.zero;
-                chapter1.SetActive(true);
-                chapter1.transform.DOScale(Vector3.one, 1f).OnComplete(() =>
-                {
-                    Invoke("DisplayConflicts",1.5f);
-                });
+                Invoke("DisplayConflicts",1.5f);
             });
         });
+        
     }
 
     private void DisplayConflicts()
@@ -79,5 +82,20 @@ public class SkipButton : MonoBehaviour
                 });
             });
         });
+    }
+
+    private void Update()
+    {
+        if (VideoCount)
+        {
+            timer += Time.deltaTime;
+        }
+
+        if (timer > 60f)
+        {
+            timer = 0;
+            VideoCount = false;
+            SkipToMandates();
+        }
     }
 }

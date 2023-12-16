@@ -6,12 +6,11 @@ using UnityEngine;
 
 public class StartGame : MonoBehaviour
 {
+    [SerializeField] private SkipButton _skipButton;
     [SerializeField] private TextMeshProUGUI operation;
     [SerializeField] private TextMeshProUGUI keepthepeace;
     [SerializeField] private GameObject police;
-
     [SerializeField] private GameObject video;
-
     [SerializeField] private GameObject skip;
     //[SerializeField] private GameObject button;
 
@@ -50,10 +49,7 @@ public class StartGame : MonoBehaviour
     private void VideoComeIn()
     {
         video.SetActive(true);
-
-        video.transform.DOMoveY(-0.5f, 1f).SetEase(Ease.OutExpo).OnComplete((() =>
-        {
-            skip.SetActive(true);
-        }));
+        skip.SetActive(true);
+        _skipButton.VideoCount = true;
     }
 }
