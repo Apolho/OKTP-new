@@ -1658,7 +1658,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 2548b61259766fb4a826e12e0c8c22f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 45ab48d8d69170c4bbd8f05bbda1dc64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2198,11 +2198,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You learned all about Peacekeepers, when they are deployed, and their
-    responsibilities.
+  m_text: 'You learned all about Peacekeepers: when they are deployed and their responsibilities.
 
-    If you would like to learn more, click below and scan
-    the QR code!'
+    If
+    you would like to learn more, click below and scan the QR code!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ad071112568413479497e7b03594e72, type: 2}
   m_sharedMaterial: {fileID: -982792828960705864, guid: 7ad071112568413479497e7b03594e72, type: 2}

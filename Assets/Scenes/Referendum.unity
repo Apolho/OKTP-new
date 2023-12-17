@@ -861,6 +861,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &300555052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1724,6 +1728,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &543853714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,7 +1841,7 @@ GameObject:
   - component: {fileID: 576197284}
   m_Layer: 5
   m_Name: CheckBox (4)
-  m_TagString: isNotMandate
+  m_TagString: isMandate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1874,6 +1882,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &576197282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1968,6 +1980,81 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &593611997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593612000}
+  - component: {fileID: 593611999}
+  - component: {fileID: 593611998}
+  m_Layer: 5
+  m_Name: Counter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &593611998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593611997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a7e2bc963e58c0240bae7be1d5bfe10f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &593611999
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593611997}
+  m_CullTransparentMesh: 1
+--- !u!224 &593612000
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593611997}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.8131428}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1369983429}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -663.3598, y: 393.3429}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &597205810 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2670091262388707937, guid: 5dca9b83e39b1f24bb5e053dede0ca12, type: 3}
@@ -2085,6 +2172,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &604079842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2717,6 +2808,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &842425379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2923,6 +3018,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &874521438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3107,6 +3206,7 @@ GameObject:
   - component: {fileID: 947024791}
   - component: {fileID: 947024790}
   - component: {fileID: 947024789}
+  - component: {fileID: 947024792}
   m_Layer: 5
   m_Name: BranchFeedBack
   m_TagString: Untagged
@@ -3191,6 +3291,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 947024792}
+        m_TargetAssemblyTypeName: CheckBox, Assembly-CSharp
+        m_MethodName: FeedbackButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &947024790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3229,6 +3341,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947024787}
   m_CullTransparentMesh: 1
+--- !u!114 &947024792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947024787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9238fdb499b4a5a4e96d94cba0f2cc7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkBox: []
+  feedBack: {fileID: 0}
+  feedBackButton: {fileID: 0}
+  selected: {fileID: 0}
+  unselected: {fileID: 0}
+  counter1: {fileID: 21300000, guid: a3321fa546fca7745bc7bde24de14a3e, type: 3}
+  counter2: {fileID: 21300000, guid: b557ad0706801604894c1eeb5fc31c94, type: 3}
+  counter3: {fileID: 21300000, guid: a7e2bc963e58c0240bae7be1d5bfe10f, type: 3}
+  counterImage: {fileID: 593611998}
 --- !u!1 &952537943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,7 +3522,7 @@ GameObject:
   - component: {fileID: 965572542}
   m_Layer: 5
   m_Name: CheckBox (2)
-  m_TagString: isNotMandate
+  m_TagString: isMandate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3486,6 +3619,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &965572544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3539,7 +3676,7 @@ GameObject:
   - component: {fileID: 993305173}
   m_Layer: 5
   m_Name: CheckBox (7)
-  m_TagString: isNotMandate
+  m_TagString: isMandate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3636,6 +3773,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &993305175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3786,6 +3927,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &1018299510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3936,6 +4081,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &1024161906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4141,8 +4290,12 @@ MonoBehaviour:
   - {fileID: 993305175}
   feedBack: {fileID: 632531264}
   feedBackButton: {fileID: 947024787}
-  selected: {fileID: 0}
-  unselected: {fileID: 0}
+  selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
+  unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!1 &1185411663
 GameObject:
   m_ObjectHideFlags: 0
@@ -4671,7 +4824,7 @@ GameObject:
   - component: {fileID: 1316483820}
   m_Layer: 5
   m_Name: CheckBox (7)
-  m_TagString: isNotMandate
+  m_TagString: isMandate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4712,6 +4865,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &1316483818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5106,6 +5263,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &1343768665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5215,7 +5376,7 @@ GameObject:
   - component: {fileID: 1348095797}
   m_Layer: 5
   m_Name: CheckBox (6)
-  m_TagString: isMandate
+  m_TagString: isNotMandate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5312,6 +5473,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &1348095799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5398,6 +5563,7 @@ Transform:
   - {fileID: 1323453063}
   - {fileID: 217579865}
   - {fileID: 1169253636}
+  - {fileID: 593612000}
   - {fileID: 1959415480}
   m_Father: {fileID: 1322094809}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5457,6 +5623,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &1405697276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5566,7 +5736,7 @@ GameObject:
   - component: {fileID: 1438835818}
   m_Layer: 5
   m_Name: CheckBox (6)
-  m_TagString: isMandate
+  m_TagString: isNotMandate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5607,6 +5777,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &1438835816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5850,7 +6024,7 @@ GameObject:
   - component: {fileID: 1453519413}
   m_Layer: 5
   m_Name: CheckBox (5)
-  m_TagString: isNotMandate
+  m_TagString: isMandate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5891,6 +6065,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &1453519411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7374,6 +7552,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &1860371713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7906,7 +8088,7 @@ GameObject:
   - component: {fileID: 2060100941}
   m_Layer: 5
   m_Name: CheckBox (5)
-  m_TagString: isNotMandate
+  m_TagString: isMandate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8003,6 +8185,10 @@ MonoBehaviour:
   feedBackButton: {fileID: 0}
   selected: {fileID: 21300000, guid: a2f87ae365e8ee04092e8e46591a4002, type: 3}
   unselected: {fileID: 21300000, guid: 8f034e65d4199ec43b4cbfee69401944, type: 3}
+  counter1: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counterImage: {fileID: 0}
 --- !u!114 &2060100943
 MonoBehaviour:
   m_ObjectHideFlags: 0

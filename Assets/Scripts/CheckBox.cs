@@ -16,6 +16,14 @@ public class CheckBox : MonoBehaviour
 
     public Sprite selected;
     public Sprite unselected;
+
+    public Sprite counter1;
+    public Sprite counter2;
+    public Sprite counter3;
+
+    public Image counterImage;
+
+    public static int counter;
     public void Continue()
     {
         allGreen = true;
@@ -37,7 +45,7 @@ public class CheckBox : MonoBehaviour
             
         }
 
-        if (allGreen == false && allWhite == false)
+        if (allGreen == false && allWhite == false && counter < 2)
         {
             //make message say they chose incorrect ones and missed correct ones
             feedBack.text =
@@ -45,19 +53,39 @@ public class CheckBox : MonoBehaviour
                 "\n Double check your answers and see what's wrong!";
             feedBackButton.SetActive(true);
         }
-        else if(allGreen == false && allWhite == true)
+        else if(allGreen == false && allWhite == true && counter < 2)
         {
             //message says they missed correct ones
-            feedBack.text = "Hmm... I think you may have missed a few mandates." +
+            feedBack.text = "Hmm... You have missed a few mandates." +
             "\n Double check your answers and see what's wrong!";
             feedBackButton.SetActive(true);
 
         }
-        else if (allGreen == true && allWhite == false)
+        else if (allGreen == true && allWhite == false && counter < 2)
         {
             //message says they chose incorrect ones
-            feedBack.text = "Hmm... I don't think you are allowed to do all of these." +
+            feedBack.text = "Hmm... You are not allowed to do all of these." +
                             "\n Double check your answers and see what's wrong!";
+            feedBackButton.SetActive(true);
+
+        }
+        else if (allGreen == false && allWhite == false && counter == 2)
+        {
+            feedBack.text =
+                "Hmm... We are not allowed to do all of these. \n On top of that, you have missed a few of our actual responsibilities." +
+                "\n Sadly, you ran out of guesses. Nonetheless, you did a great job!";
+            feedBackButton.SetActive(true);
+        }
+        else if (allGreen == false && allWhite == true && counter == 2)
+        {
+            feedBack.text = "Hmm... You may have missed a few mandates." +
+                            "\n Sadly, you ran out of guesses. Nonetheless, you did a great job!";
+            feedBackButton.SetActive(true);
+        }
+        else if (allGreen == true && allWhite == false && counter == 2)
+        {
+            feedBack.text = "Hmm... We are not allowed to do all of these." +
+                            "\n Sadly, you ran out of guesses. Nonetheless, you did a great job!";
             feedBackButton.SetActive(true);
 
         }
@@ -76,6 +104,25 @@ public class CheckBox : MonoBehaviour
         else if (gameObject.GetComponent<Image>().sprite == selected)
         {
             gameObject.GetComponent<Image>().sprite = unselected;
+        }
+    }
+
+    //when clicked, this function will make the counter go up. When it is passed 2 it will change scene.
+    public void FeedbackButton()
+    {
+        if (counterImage.sprite == counter3)
+        {
+            counter++;
+            counterImage.sprite = counter2;
+        }
+        else if (counterImage.sprite == counter2)
+        {
+            counter++;
+            counterImage.sprite = counter1;
+        }
+        else if (counterImage.sprite == counter1)
+        {
+            SceneManager.LoadScene("Learn More");
         }
     }
 }
